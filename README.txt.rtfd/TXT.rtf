@@ -1,0 +1,103 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\fnil\fcharset134 STSongti-SC-Regular;\f2\froman\fcharset0 Times-Roman;
+\f3\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue10;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c3922;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat2\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww19620\viewh10320\viewkind0
+\deftab720
+\pard\pardeftab720\sl440\sa240\partightenfactor0
+
+\f0\b\fs37\fsmilli18667 \cf2 \expnd0\expndtw0\kerning0
+CSE 3330 
+\f1\b0 \'a8\'43 
+\f0\b Database Systems, Fall 2018 \
+Instructor: Medhat Saleh\
+Project 3: Description and Deliverables 
+\f2\b0\fs24 \cf3 \
+\pard\pardeftab720\sl360\sa240\partightenfactor0
+
+\f3\fs32 \cf2 Create a small application with JAVA/MySQL with the airline database (use the given database from the folder (ariline.sql))\uc0\u8232 
+\f0\b Notes: 
+\f2\b0\fs24 \cf3 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl360\sa320\partightenfactor0
+\ls1\ilvl0
+\f3\fs32 \cf2 \kerning1\expnd0\expndtw0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+This project must be done individually. No copying is allowed. \uc0\u8232 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+You need to make sure that your application is runnable on OMEGA/MYSQL command \uc0\u8232 line. \u8232 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+To get full credit, your submitted code should be runnable on Omega terminal and do 3 \uc0\u8232 given tasks correctly. Also, your code with error does have any credit. \u8232 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4.	}\expnd0\expndtw0\kerning0
+**Platform: We ONLY use MySQL RDBMS on Omega@UTA.EDU for testing your \uc0\u8232 queries on Airline Database (airline1.sql). \u8232 
+\f2\fs24 \cf3 \
+\pard\pardeftab720\sl440\sa240\partightenfactor0
+
+\f0\b\fs37\fsmilli18667 \cf2 Instruction to create your Application 
+\f2\b0\fs24 \cf3 \
+\pard\pardeftab720\sl360\sa240\partightenfactor0
+
+\f3\fs32 \cf2 Write a Program with the Java Programming language and the standard JDBC API to create the following Views: 
+\f2\fs24 \cf3 \
+
+\f0\b\fs32 \cf2 V1. Flights with no assigned Pilots 
+\f2\b0\fs24 \cf3 \
+
+\f3\fs32 \cf2 UnassignedPilotFlights(Flight_Number, Seq, Flight_Date) 
+\f2\fs24 \cf3 \
+
+\f0\b\fs32 \cf2 V2. Planes Due for Maintenance: for planes that were last maintained over 60 days ago. 
+\f2\b0\fs24 \cf3 \
+
+\f3\fs32 \cf2 DueForMaintenacePlanes(PlaneID, Maker, Model, LastMaintained) 
+\f2\fs24 \cf3 \
+
+\f0\b\fs32 \cf2 V3. Pilot flying assignments: 
+\f2\b0\fs24 \cf3 \
+
+\f3\fs32 \cf2 PilotFlyAssignments(PilotID, Pilot_Name, Flight_Number, From_City, To_City, Flight_Date) 
+\f2\fs24 \cf3 \
+
+\f0\b\fs32 \cf2 V4. Pilot flight legs count for month/year (example 2017-07) 
+\f2\b0\fs24 \cf3 \
+
+\f3\fs32 \cf2 PilotFlightLegsCount(PilotId, Pilot_Name, Month_year, Flight_Legs_Count) 
+\f2\fs24 \cf3 \
+
+\f0\b\fs32 \cf2 Present the user with a simple menu of options: 
+\f2\b0\fs24 \cf3 \
+
+\f3\fs32 \cf2    1. View of Unassigned Pilot Flights 
+\f2\fs24 \cf3 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl360\sa320\partightenfactor0
+\ls2\ilvl0
+\f3\fs32 \cf2 \kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+View of Due For Maintenance Planes \
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+View of Pilot Fly Assignments \
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4.	}\expnd0\expndtw0\kerning0
+View of Pilot FlightLegs Count \
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	5.	}\expnd0\expndtw0\kerning0
+ Quit 
+\f2\fs24 \cf3 \
+\pard\pardeftab720\sl360\sa240\partightenfactor0
+
+\f3\fs32 \cf2 The user chooses one of the above menu options and performs the task (or quit the program for q). When the task is completed display the view as output, properly. Then, the menu returns to the main menu.\uc0\u8232 For example, in choice1, you will create a view (a table named as :UnassignedPilotFlights with following attributes <Flight_Number, Seq, Flight_Date> ). Then your query\'92s result should be displayed as output. \
+\
+Language used: Java with JDBC\
+How to run the program:\
+1) Copy the axb2860_P4.java file to omega.\
+2) Use the command export set CLASSPATH=.:~/mysql-connector-java.jar:$CLASSPATH\
+3) Type javac axb2860_P4.java\
+4) run java axb2860_P4\
+5) Then choose any option 1,2,3,4 and it will execute according to the given instructions and print the output in a table form\
+6) Scrrenshots of the working program is attached in working folder for reference.
+\f2\fs24 \cf3 \
+\pard\pardeftab720\sl440\sa240\partightenfactor0
+
+\f0\b\fs37\fsmilli18667 \cf2 \
+\uc0\u8232 
+\f2\b0\fs24 \cf3 \
+}
